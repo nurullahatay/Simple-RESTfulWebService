@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SimpleRESTfulWebService:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="profile.war">
+      <element id="artifact" artifact-name="SimpleRESTfulWebService:war exploded" />
+    </root>
+  </artifact>
+</component>
