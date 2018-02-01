@@ -16,11 +16,12 @@ public class Profile {
 
     }
 
-    public Profile(long id, String profileName, String firstName, String lastName) {
+    public Profile(long id, String profileName, String firstName, String lastName,Date created) {
         this.id = id;
         this.profileName = profileName;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.created = created;
     }
 
     public long getId() {
@@ -54,5 +55,14 @@ public class Profile {
         this.created = created;
     }
 
-
+    @Override
+    public String toString() {
+        return "Profile{" +
+                "id=" + id +
+                ", profileName='" + profileName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", created=" + created +
+                '}';
+    }
 }

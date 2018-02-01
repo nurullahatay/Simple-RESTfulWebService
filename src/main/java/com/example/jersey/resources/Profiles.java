@@ -11,7 +11,6 @@ import java.util.List;
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class Profiles {
-
     private ProfileService profileService=new ProfileService();
 
     @GET
@@ -20,7 +19,6 @@ public class Profiles {
     }
 
     @POST
-
     public Profile addProfile(Profile profile){
         return profileService.addProfile(profile);
     }
@@ -29,7 +27,7 @@ public class Profiles {
     @Path("/{profileName}")
     public Profile updateProfile(@PathParam("profileName") String profileName ,Profile profile){
         profile.setProfileName(profileName);
-        return profileService.upDateProfile(profile);
+        return profileService.updateProfile(profile);
     }
 
     @DELETE
